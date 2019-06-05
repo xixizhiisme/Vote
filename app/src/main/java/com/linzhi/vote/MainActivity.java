@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             stringBuffer.append("r=").append(URLEncoder.encode(voteStr,"utf-8"));
 
             byte[] data=stringBuffer.toString().getBytes();
-            String urlPath="http://10.64.151.9:8080/vote/GetVote";
+            String urlPath="http://10.32.42.7:8080/vote/GetVote";
             URL url=new URL(urlPath);
 
             HttpURLConnection httpURLConnection=(HttpURLConnection) url.openConnection();
